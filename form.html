@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+</head>
+<body bgcolor="#e5ecfb">
+
+<form>
+<font face="Space Mono">
+
+<!-- User Info -->
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="user_name">User Name:</label><br>
+<input type="text" id="user_name" name="username" minlength="4" maxlength="12" placeholder="Enter your name" required>
+<br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" placeholder="Enter password" required>
+</fieldset>
+
+<br>
+
+<!-- Gender -->
+<fieldset>
+<legend>Gender</legend>
+
+<input type="radio" name="gender" value="male" id="male" checked>
+<label for="male">Male</label><br>
+
+<input type="radio" name="gender" value="female" id="female">
+<label for="female">Female</label><br>
+
+<input type="radio" name="gender" value="prefer_not_to_say" id="pnts">
+<label for="pnts">Prefer Not to say</label>
+</fieldset>
+
+<br>
+
+<!-- Hobbies -->
+<fieldset>
+<legend>Hobbies</legend>
+
+<input type="checkbox" name="hobby" value="singing" id="singing">
+<label for="singing">Singing</label><br>
+
+<input type="checkbox" name="hobby" value="dancing" id="dancing">
+<label for="dancing">Dancing</label><br>
+
+<input type="checkbox" name="hobby" value="reading" id="reading">
+<label for="reading">Reading</label><br>
+
+<input type="checkbox" name="hobby" value="other" id="other">
+<label for="other">Other</label>
+</fieldset>
+
+<br>
+
+<!-- City -->
+<fieldset>
+<legend>City</legend>
+
+<label for="city">Select your city:</label><br>
+<select name="city" id="city" required>
+<option value="" disabled selected>--Choose City--</option>
+<option value="ludhiana">Ludhiana</option>
+<option value="chandigarh">Chandigarh</option>
+<option value="patiala">Patiala</option>
+<option value="moga">Moga</option>
+<option value="others">Others</option>
+</select>
+</fieldset>
+
+<br>
+
+<!-- Information -->
+<fieldset>
+<legend>Additional Information</legend>
+
+<label for="info">Information about you:</label><br>
+<textarea name="information" id="info" rows="5" cols="40" placeholder="Write something about yourself..."></textarea>
+</fieldset>
+
+<br>
+
+<input type="reset" value="Reset">
+<input type="submit" value="Submit">
+
+</font>
+</form>
+
+</body>
+</html>
